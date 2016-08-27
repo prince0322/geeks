@@ -1,3 +1,31 @@
 # depslib dependency file v1.0
-1472330112 source:/home/prince/Documents/geeks/heap.cpp
+1472330338 source:/home/prince/Documents/geeks/heap.cpp
+	<cstdio>
+	<deque>
+	<queue>
+	<stack>
+	<vector>
+	<cstdlib>
+	<iostream>
+	<algorithm>
+	<cstring>
+	<bitset>
+	<list>
+	<set>
+	<map>
+
+1472330838 source:/home/prince/Documents/geeks/bucket_sort.cpp
+	<cstdio>
+	<deque>
+	<queue>
+	<stack>
+	<vector>
+	<cstdlib>
+	<iostream>
+	<algorithm>
+	<cstring>
+	<bitset>
+	<list>
+	<set>
+	<map>
 
