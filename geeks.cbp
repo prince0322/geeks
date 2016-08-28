@@ -32,7 +32,14 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="bucket_sort.cpp" />
+		<Unit filename="heap.cpp" />
 		<Unit filename="main.cpp" />
+		<Unit filename="merge_sort.cpp" />
+		<Unit filename="queue_impl.cpp" />
+		<Unit filename="quick_sort.cpp" />
+		<Unit filename="radix_sort.cpp" />
+		<Unit filename="stack_impl.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
