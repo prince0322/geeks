@@ -32,6 +32,7 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="avl_tree.cpp" />
 		<Unit filename="bucket_sort.cpp" />
 		<Unit filename="heap.cpp" />
 		<Unit filename="main.cpp" />
