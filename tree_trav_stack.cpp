@@ -15,7 +15,7 @@ inline void inorder(pnode root) {
       // do something with data.
       root = root->right;
     } else {
-      all_traversed = false;
+      all_traversed = true;
     }
   }
 }
