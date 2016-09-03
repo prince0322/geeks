@@ -19,7 +19,7 @@ using namespace std;
 
 const int N = 100010;
 
-int fre = 0;
+int fre = 0, n = 100;
 int stk[N], tp[N], nxt[N];
 
 // initially all top will point to -1
@@ -28,10 +28,10 @@ inline void init(int k) {
   for (int i = 1; i <= k; i++) {
     tp[i] = -1;
   }
-  for (int i = 0; i <= 100; i++) {
+  for (int i = 0; i <= n; i++) {
     nxt[i] = i + 1;
   }
-  nxt[100] = -1;
+  nxt[n] = -1;
   fre = 0;
 }
 
