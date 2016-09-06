@@ -36,12 +36,14 @@
 		<Unit filename="bucket_sort.cpp" />
 		<Unit filename="heap.cpp" />
 		<Unit filename="k_stack_impl.cpp" />
+		<Unit filename="kth_merge_sorted.cpp" />
 		<Unit filename="main.cpp" />
 		<Unit filename="merge_sort.cpp" />
 		<Unit filename="queue_impl.cpp" />
 		<Unit filename="quick_sort.cpp" />
 		<Unit filename="radix_sort.cpp" />
 		<Unit filename="stack_impl.cpp" />
+		<Unit filename="ternary_search_tree.cpp" />
 		<Unit filename="tree_trav_stack.cpp" />
 		<Unit filename="valid_balparen_len.cpp" />
 		<Extensions>

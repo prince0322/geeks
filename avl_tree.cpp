@@ -4,11 +4,11 @@ using namespace std;
 
 struct Node {
   int key, val;
-  int height;
+  int height, cnt;
   Node *l, *r;
 
   Node() {}
-  Node(int k, int v) : key(k), val(v), height(1), l(NULL), r(NULL) {}
+  Node(int k, int v) : key(k), val(v), height(1), cnt(1), l(NULL), r(NULL) {}
 };
 
 typedef Node* pnode;
@@ -23,6 +23,16 @@ inline void updateHeight(pnode root) {
   }
 }
 
+inline int getCnt(pnode root) {
+  return (root) ? root->cnt : 0;
+}
+
+inline void updateCnt(pnode root) {
+  if (root) {
+    root->cnt = getCnt(root->l) + getCnt(root->r) + 1;
+  }
+}
+
 inline pnode rRotate(pnode y) {
   pnode x = y->l;
   pnode t = x->r;
@@ -30,6 +40,8 @@ inline pnode rRotate(pnode y) {
   y->l = t;
   updateHeight(y);
   updateHeight(x);
+  updateCnt(y);
+  updateCnt(x);
   return x;
 }
 
@@ -40,6 +52,8 @@ inline pnode lRotate(pnode y) {
   y->r = t;
   updateHeight(y);
   updateHeight(x);
+  updateCnt(y);
+  updateCnt(x);
   return x;
 }
 
@@ -72,6 +86,7 @@ pnode insertNode(pnode root, int key, int val) {
     root->r = insertNode(root->r, key, val);
   }
   updateHeight(root);
+  updateCnt(root);
   int balFactor = getBalFactor(root);
   // l - l case.
   if (balFactor > 1 && key < root->l->key) {
@@ -123,6 +138,7 @@ pnode deleteNode(pnode root, int key) {
     return root;
   }
   updateHeight(root);
+  updateCnt(root);
   int balFactor = getBalFactor(root);
   // l - l case.
   if (balFactor > 1 && key < root->l->key) {
@@ -145,13 +161,28 @@ pnode deleteNode(pnode root, int key) {
   return root;
 }
 
-vector <int> ans;
+inline int getKth(pnode root, int k) {
+  if (root == NULL) {
+    return -1;
+  }
+  int root_rank = getCnt(root->l) + 1;
+  if (root_rank == k) {
+    return root->key;
+  }
+  if (root_rank < k) {
+    return getKth(root->r, k - root_rank);
+  } else {
+    return getKth(root->l, k);
+  }
+}
+
+vector <pair <int, int>> ans;
 
 inline void walk(pnode root) {
   if (root) {
     walk(root->l);
     //printf("(%d %d) ", root->key, root->val);
-    ans.push_back(root->key);
+    ans.push_back(make_pair(root->key, root->cnt));
     walk(root->r);
   }
 }
@@ -167,9 +198,17 @@ int main() {
   }
   walk(root);
   for (int i = 0; i < (int)ans.size(); i++) {
-    printf("%d\n", ans[i]);
+    printf("%d %d\n", ans[i].first, ans[i].second);
+  }
+  int q;
+  scanf("%d", &q);
+  for (int i = 0; i < n; i++) {
+    int k;
+    scanf("%d", &k);
+    printf("%d\n", getKth(root, k));
   }
 }
+
 
 
 

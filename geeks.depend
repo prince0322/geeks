@@ -29,3 +29,114 @@
 	<set>
 	<map>
 
+1472331791 source:/home/prince/Documents/geeks/merge_sort.cpp
+	<cstdio>
+	<deque>
+	<queue>
+	<stack>
+	<vector>
+	<cstdlib>
+	<iostream>
+	<algorithm>
+	<cstring>
+	<bitset>
+	<list>
+	<set>
+	<map>
+
+1472333918 source:/home/prince/Documents/geeks/queue_impl.cpp
+	<cstdio>
+	<deque>
+	<queue>
+	<stack>
+	<vector>
+	<cstdlib>
+	<iostream>
+	<algorithm>
+	<cstring>
+	<bitset>
+	<list>
+	<set>
+	<map>
+
+1472332193 source:/home/prince/Documents/geeks/quick_sort.cpp
+	<cstdio>
+	<deque>
+	<queue>
+	<stack>
+	<vector>
+	<cstdlib>
+	<iostream>
+	<algorithm>
+	<cstring>
+	<bitset>
+	<list>
+	<set>
+	<map>
+
+1472331283 source:/home/prince/Documents/geeks/radix_sort.cpp
+	<cstdio>
+	<deque>
+	<queue>
+	<stack>
+	<vector>
+	<cstdlib>
+	<iostream>
+	<algorithm>
+	<cstring>
+	<bitset>
+	<list>
+	<set>
+	<map>
+
+1472333494 source:/home/prince/Documents/geeks/stack_impl.cpp
+	<cstdio>
+	<deque>
+	<queue>
+	<stack>
+	<vector>
+	<cstdlib>
+	<iostream>
+	<algorithm>
+	<cstring>
+	<bitset>
+	<list>
+	<set>
+	<map>
+
+1472396537 source:/home/prince/Documents/geeks/avl_tree.cpp
+	<bits/stdc++.h>
+
+1472861951 source:/home/prince/Documents/geeks/k_stack_impl.cpp
+	<cstdio>
+	<deque>
+	<queue>
+	<stack>
+	<vector>
+	<cstdlib>
+	<iostream>
+	<algorithm>
+	<cstring>
+	<bitset>
+	<list>
+	<set>
+	<map>
+
+1472396329 source:/home/prince/Documents/geeks/main.cpp
+	<bits/stdc++.h>
+
+1472960409 source:/home/prince/Documents/geeks/ternary_search_tree.cpp
+	<cstdio>
+	<deque>
+	<queue>
+	<stack>
+	<vector>
+	<cstdlib>
+	<iostream>
+	<algorithm>
+	<cstring>
+	<bitset>
+	<list>
+	<set>
+	<map>
+
